@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Image Gallery</h1>
+        <section id="gallery">
+          <img src="http://placeimg.com/800/400/nature/1" alt="1">
+          <img src="http://placeimg.com/800/400/nature/2" alt="2">
+          <img src="http://placeimg.com/800/400/nature/3" alt="3">
+        </section>
+        <button 
+          class="btn nextBtn" 
+          onclick="img_move()"
+        >다음 이미지</button>
+      </div><!-- container -->
+
+    <script>
+        /* 함수 정의하지 않고 제이쿼리로 직접 불러와 실행하기
+        $(function(){
+            $('.nextBtn').click(function(){
+                $('#gallery img:first').appendTo('#gallery');
+                });
+        })*/
+
+        // 자바스크립트 onclick 이벤트 이용하여 실행하기
+        function img_move() {
+            $('#gallery img:first').appendTo('#gallery');
+        }
+    
+    </script>
+</body>
+
+</html>

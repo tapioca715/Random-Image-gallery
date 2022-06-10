@@ -1,0 +1,38 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    margin-bottom: 1em;
+  }
+  
+.container {
+    width: 800px;
+    height: 400px;
+    background: #efefef;
+  }
+
+  #gallery {
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+  }
+ 
+  .btn {
+    border: none;
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 8px 20px;
+    margin-top: 1em;
+  }
